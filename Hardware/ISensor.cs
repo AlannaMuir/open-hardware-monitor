@@ -20,6 +20,7 @@ namespace OpenHardwareMonitor.Hardware {
     Temperature, // °C
     Load, // %
     Fan, // RPM
+    Pump, // RPM
     Flow, // L/h
     Control, // %
     Level, // %

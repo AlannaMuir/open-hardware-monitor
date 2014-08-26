@@ -21,6 +21,7 @@ namespace OpenHardwareMonitor.Hardware {
     GpuAti,    
     TBalancer,
     Heatmaster,
+    CorsairLink,
     HDD
   }
 

@@ -44,6 +44,9 @@ namespace OpenHardwareMonitor.GUI {
           case HardwareType.HDD:
             image = Utilities.EmbeddedResources.GetImage("hdd.png");
             break;
+          case HardwareType.CorsairLink:
+            image = Utilities.EmbeddedResources.GetImage("corsair.png");
+            break;
           case HardwareType.Heatmaster:
             image = Utilities.EmbeddedResources.GetImage("bigng.png");
             break;

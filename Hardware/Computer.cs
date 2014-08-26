@@ -101,6 +101,7 @@ namespace OpenHardwareMonitor.Hardware {
       if (fanControllerEnabled) {
         Add(new TBalancer.TBalancerGroup(settings));
         Add(new Heatmaster.HeatmasterGroup(settings));
+        Add(new CorsairLink.CorsairLinkGroup(settings));
       }
 
       if (hddEnabled)
@@ -181,9 +182,11 @@ namespace OpenHardwareMonitor.Hardware {
           if (value) {
             Add(new TBalancer.TBalancerGroup(settings));
             Add(new Heatmaster.HeatmasterGroup(settings));
+            Add(new CorsairLink.CorsairLinkGroup(settings));
           } else {
             RemoveType<TBalancer.TBalancerGroup>();
             RemoveType<Heatmaster.HeatmasterGroup>();
+            RemoveType<CorsairLink.CorsairLinkGroup>();
           }
         }
         fanControllerEnabled = value;
@@ -385,7 +388,8 @@ namespace OpenHardwareMonitor.Hardware {
         return false;
       }
 
-      public void SetValue(string name, string value) { }
+      public void SetValue(string name, string value) {
+      }
 
       public string GetValue(string name, string value) {
         return value;
