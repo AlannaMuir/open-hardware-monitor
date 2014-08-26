@@ -103,8 +103,6 @@ namespace OpenHardwareMonitor.Hardware.CorsairLink {
                 case 0x3B: name = "Hydro H80i"; break;
                 case 0x3C: name = "Hydro H100i"; break;
                 case 0x3D: name = "Commander Mini"; break;
-                case 0x40: name = "Hydro H100i GT"; break;
-                case 0x41: name = "Hydro H110i GT"; break;
                 default: return; // other node types aren't supported (yet?)
             }
             name += " v" + version;

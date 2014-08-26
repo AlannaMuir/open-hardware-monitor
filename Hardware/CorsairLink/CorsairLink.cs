@@ -41,8 +41,6 @@ namespace OpenHardwareMonitor.Hardware.CorsairLink {
                 case 0x3B: oldClinkDevice = false; tempCount = 1; fanCount = 4; pumpCount = 1; break;
                 case 0x3C: oldClinkDevice = false; tempCount = 1; fanCount = 4; pumpCount = 1; break;
                 case 0x3D: oldClinkDevice = false; tempCount = 4; fanCount = 6; pumpCount = 0; break;
-                case 0x40: oldClinkDevice = false; tempCount = 1; fanCount = 2; pumpCount = 1; break;
-                case 0x41: oldClinkDevice = false; tempCount = 1; fanCount = 2; pumpCount = 1; break;
                 default: throw new Exception("Invalid Device Ident Provided");
             }
             
